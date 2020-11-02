@@ -1,9 +1,9 @@
 {
-	"name": "SingleFile Mini",
-	"author": "Gildas Lormeau",
-	"homepage_url": "https://github.com/gildas-lormeau/SingleFile",
-	"version": "0.0.1",
-	"description": "SingleFile Mini",
+	"name": "SingleFileSelenium",
+	"author": "Gildas Lormeau & Dalton Overlin",
+	"homepage_url": "https://github.com/Dalton-Overlin/SingleFileSelenium",
+	"version": "1.0",
+	"description": "A fork of SingleFile by Gildas Lormeau that has been added onto by Dalton Overlin. This extension can allow for Selenium to interract with this extension in order to save the currently active tab.",
 	"content_scripts": [
 		{
 			"matches": [
