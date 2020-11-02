@@ -8,4 +8,4 @@ This project is a fork of SingleFile by @gildas-lormeau whose project can be fou
 
 # Notice
 
-This project is still underway and I will remove this warning once I have gotten this extension to a state where it can fully interract with the regular non-healdesss version of Selenium in a reliable manner. So until this text is omitted please assume that this extension is still under its final stages of development. 
+This project is still underway and I will remove this warning once I have gotten this extension to a state where it can fully interract with the regular non-healdess version of Selenium in a reliable manner. So until this text is omitted please assume that this extension is still under its final stages of development. 
