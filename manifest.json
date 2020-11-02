@@ -1,0 +1,80 @@
+{
+	"name": "SingleFile Mini",
+	"author": "Gildas Lormeau",
+	"homepage_url": "https://github.com/gildas-lormeau/SingleFile",
+	"version": "0.0.1",
+	"description": "SingleFile Mini",
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"run_at": "document_start",
+			"js": [
+				"lib/single-file/index.js",
+				"extension/lib/single-file/index.js",
+				"extension/lib/single-file/browser-polyfill/chrome-browser-polyfill.js",
+				"lib/single-file/single-file-helper.js",
+				"lib/single-file/vendor/css-unescape.js",
+				"lib/single-file/processors/hooks/content/content-hooks-frames.js",
+				"lib/single-file/processors/frame-tree/content/content-frame-tree.js"
+			],
+			"all_frames": true,
+			"match_about_blank": true
+		},
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"run_at": "document_start",
+			"js": [
+				"lib/single-file/index.js",
+				"lib/single-file/processors/hooks/content/content-hooks.js",
+				"lib/single-file/modules/html-serializer.js",
+				"extension/lib/single-file/index.js",
+				"extension/core/index.js"				
+			]
+		},
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"run_at": "document_idle",
+			"js": [
+				"extension/core/content/content.js"
+			]
+		}
+	],
+	"background": {
+		"scripts": [
+			"lib/single-file/index.js",
+			"extension/lib/single-file/index.js",
+			"extension/core/index.js",
+			"extension/lib/single-file/browser-polyfill/chrome-browser-polyfill.js",
+			"extension/lib/single-file/core/bg/scripts.js",
+			"extension/lib/single-file/fetch/content/content-fetch.js",
+			"extension/lib/single-file/fetch/bg/fetch.js",
+			"extension/lib/single-file/frame-tree/bg/frame-tree.js",
+			"extension/lib/single-file/lazy/bg/lazy-timeout.js",
+			"extension/core/bg/config.js",
+			"extension/core/bg/business.js",
+			"extension/core/bg/messages.js",
+			"extension/core/bg/tabs.js",
+			"extension/core/bg/downloads.js"
+		],
+		"persistent": false
+	},
+	"web_accessible_resources": [
+		"lib/single-file/index.js",
+		"lib/single-file/modules/html-serializer.js",
+		"lib/single-file/processors/hooks/content/content-hooks-web.js",
+		"lib/single-file/processors/hooks/content/content-hooks-frames-web.js"
+	],
+	"permissions": [
+		"downloads",
+		"tabs",
+		"<all_urls>"
+	],
+	"incognito": "spanning",
+	"manifest_version": 2
+}
