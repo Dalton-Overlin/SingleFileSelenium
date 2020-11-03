@@ -1,6 +1,6 @@
-var cuizXVI = '1.0'; // Transparency.
+var cuizXVI = '0.0'; // Transparency.
 var spanXVI = document.createElement('span');
-spanXVI.innerHTML = '<button id="KTVX1997PLUSONE" style="position:fixed;bottom:0;right:0;color:black;background-color:green;opacity: ' + cuizXVI + ';z-index: 1000;">A</button>';
+spanXVI.innerHTML = '<button id="KTVX1997PLUSONE" style="width:1px;height:1px;position:fixed;bottom:0;right:0;color:black;background-color:green;opacity: ' + cuizXVI + ';z-index: 1000;">A</button>';
 document.body.appendChild(spanXVI);
 
 var buttonXVI = document.getElementById("KTVX1997PLUSONE");
