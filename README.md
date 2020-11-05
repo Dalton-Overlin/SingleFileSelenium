@@ -10,6 +10,10 @@ This project is a fork of SingleFile by @gildas-lormeau whose project can be fou
 
 Notice: This extension has only been tested for Firefox. It may work with Chrome, but it has not yet been tested. So Documentation for Firefox below is the only documentation present as of late. 
 
+# Downloading Latest Release of Extension
+
+You can download the latest release of this extension from here: https://github.com/Dalton-Overlin/SingleFileSelenium/releases/tag/1.0
+
 # Using With Firefox & Selenium
 
 This Python 3 code below can be utilized, along with the Selenium to control this extension. This function below interacts with the extension through Selenium to begin the process of saving the currently active tab/page. Simply place this code below in your Python script file for your program and call it using this command SingleFileSeleniumClickIt(driver). Keeping in mind that the variable "driver" will be replaced with whatever name you designate to the variable that points to the selenium web driver object you've created.
